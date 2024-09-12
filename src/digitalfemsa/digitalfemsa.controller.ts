@@ -8,6 +8,10 @@ export class DigitalFemsaController {
 
   @Post('create')
   async createPayment(@Body() customer: Customer) {
+    console.log({
+      ...customer,
+      rute: 'src/digitalfemsa/digitalfemsa.controller.ts',
+    });
     return await this.digitalFemsaService.createCustomer(customer);
   }
 }

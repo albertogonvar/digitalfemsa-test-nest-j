@@ -8,12 +8,11 @@ import {
 
 @Injectable()
 export class DigitalFemsaService {
-  constructor(
-    private apikey: string,
-    private config: Configuration,
-    private client: CustomersApi,
-  ) {
-    this.apikey = 'key_xxxxx';
+  private apikey: string;
+  private config: Configuration;
+  private client: CustomersApi;
+  constructor() {
+    this.apikey = 'key_GSI1dTNnU3FY7BHQJUN2qL4';
     this.config = new Configuration({ accessToken: this.apikey });
     this.client = new CustomersApi(this.config);
   }

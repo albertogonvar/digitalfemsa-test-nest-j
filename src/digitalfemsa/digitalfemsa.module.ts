@@ -6,4 +6,4 @@ import { DigitalFemsaService } from './digitalfemsa.service';
   controllers: [DigitalFemsaController],
   providers: [DigitalFemsaService],
 })
-export class DigitalfemsaModule {}
+export class DigitalFemsaModule {}
